@@ -53,7 +53,8 @@
   <p>POP QUIZ: what is the value at x=20?</p>
   <pre>
     f(20) = 20 * .25 + 5
-    f(20) = ?
+    f(20) = 5 + 5
+    f(20) = 10
   </pre>
 
   <p>I hope you can see the power of functions here!</p>
@@ -71,7 +72,8 @@
   </script>
   <p>
     For x = 0...
-    f(x) =
+    f(x) = 0 * .25 + 5 
+    f(x)= 5
     <script>
       y1 = f(0);
       document.write(y1);
@@ -79,18 +81,23 @@
   </p>
   <p>
     For x = 40...
-    f(x) =
+    f(x) = 40 * .25 + 5
+    f(x) = 10 + 5
+    f(x) = 15
     <script>
       y2 = f(40);
       document.write(y2);
     </script>
   </p>
+
   <h4>You Try this one!</h4>
   <p>
     Try to use our JavaScript function to solve for x = 20.
     <br>
     For x = 20...
-    f(x) =
+    f(x) = 20 * .25 + 5
+    f(x) = 5 + 5
+    f(x) = 10
     <script>
     </script>
   </p>
@@ -132,7 +139,9 @@
   <p>Try to find the values of g(x) for 5, 10, 15, 21, and 1001</p>
   <p>
     For x = 5...
-    g(x) =
+    g(x) = 5 * 2 + 5
+    g(x) = 10 + 5
+    g(x) = 15
     <script>
       z1 = g(5);
       document.write(z1);
@@ -140,7 +149,9 @@
   </p>
   <p>
     For x = 10...
-    g(x) =
+    g(x) = 10 * 2 + 5
+    g(x) = 20 + 5
+    g(x) = 25
     <script>
       z2 = g(10);
       document.write(z2);
@@ -149,16 +160,20 @@
   <h4> TODO: You try this one! </h4>
   <p>
     For x = 15...
-    g(x) =
+    g(x) = 15 * 2 + 5
+    g(x) = 30 + 5
+    g(x) = 35
     <script>
-      z3 = g();
-      document.write();
+      z3 = g(15);
+      document.write(z3);
     </script>
   </p>
   <h4> TODO: You try this one! </h4>
   <p>
     For x = 21...
-    g(x) = ?
+    g(x) = 21 * 2 + 5
+    g(x) = 42 + 5
+    g(x) = 47
     <script>
 
     </script>
@@ -166,7 +181,9 @@
   <h4> TODO: You try this one! </h4>
   <p>
     For x = 1001...
-    g(x) = ?
+    g(x) = 1001 * 2 + 5
+    g(x) = 2002 + 5
+    g(x) = 2007
     <script>
 
     </script>
@@ -176,24 +193,199 @@
   <p> If you've gotten this far, try and do one better! The ice cream shop is lowering it's prices to $1.50 a cone.
     Write a function that will calculate the cash that the shop has earned after x days. Then caclulate that for 5, 10,
     15, 21 and 1001 days.</p>
+    <script>
+      let a1;
+      let a2;
+      let a3;
+      let a4;
+      let a5;
+
+      function h(x) {
+        return x * 1.5 + 5;
+      }
+      </script>
+    <p>
+      For h = 5...
+      h(x) = 5 * 1.5 + 5
+      h(x) = 7.5 + 5
+      h(x) = 12.5
+      <script>
+        a1 = h(5);
+        document.write(a1);
+    </script>
+    <p>
+      For h = 10...
+      h(x) = 10 * 1.5 + 5
+      h(x) = 15 + 5
+      h(x) = 20
+      <script>
+        a2 = h(10);
+        document.write(a2);
+        </script>
+        </p>
+        <p>
+          For h = 15...
+          h(x) = 15 * 1.5 + 5
+          h(x) = 22.5 + 5
+          h(x) = 27.5
+          <script>
+            a3 = h(15);
+            document.write(a3);
+            </script>
+            </p>
+            <p>
+              For h = 21...
+              h(x) = 21 * 1.5 + 5
+              h(x) = 31.5 + 5
+              h(x) = 36.5
+              <script>
+                a4 = h(21);
+                document.write(a4);
+                </script>
+                </p>
+                <p>
+                  For h = 1001...
+                  h(x) = 1001 * 1.5 + 5
+                  h(x) = 1501.5 + 5
+                  h(x) = 1506.5
+                  <script>
+                    a5 = h(1001);
+                    document.write(a5);
+                    </script>
+                    </p>
+        </p>
 
   <h4>TODO: You try this one!</h4>
   <p> In the space bellow, write the html tags and javascript code to make your functions. Write the code to write the
     results of the functions to the page. </p>
+<p id ="results"></p>
+<script>
+  let b1;
+  let b2;
+  let b3;
+  let b4;
+  let b5;
+
+  function i(x) {
+    return x * 2 + 5;
+  }
+
+  b1 = i(5);
+  b2 = i(10);
+  b3 = i(15);
+  b4 = i(21);
+  b5 = i(1001);
+  </script>
+  
+  <p>
+      For i = 5...
+      i(x) = 5 * 2 + 5
+      i(x) = 10 + 5
+      i(x) = 15
+      <script>
+       document.write(b1);
+  
+</script>
+</p>
+<p>
+      For i = 10...
+      i(x) = 10 * 2 + 5
+      i(x) = 20 + 5
+      i(x) = 25
+      <script>
+       document.write(b2);
+       </script>
+</p>
+<p>
+      For i = 15...
+      i(x) = 15 * 2 + 5
+      i(x) = 30 + 5
+      i(x) = 35
+      <script>
+       document.write(b3);
+       </script>
+</p>
+<p>
+      For i = 21...
+      i(x) = 21 * 2 + 5
+      i(x) = 42 + 5
+      i(x) = 47
+      <script>
+       document.write(b4);
+       </script>
+</p>
+<p>
+      For i = 1001...
+      i(x) = 1001 * 2 + 5
+      i(x) = 2002 + 5
+      i(x) = 2007
+      <script>
+       document.write(b5);
+       </script>
+</p>
 
 
-
-
-
-
-
-
-
-
-
-  <h4>Bonus:</h4>
+ <h4>Bonus:</h4>
   <p>Try out some more functions for different business senarios. As an extra bonus, you might try two variables! For
     example f(a,b) = a*2 + b. What could such a function represent in the business scenario?</p>
+    <p>
+      For f = 5, 10...
+      f(x) = 5 * 2 + 10
+      f(x) = 10 + 10
+      f(x) = 20
+      <script>
+        function f(a,b) {
+          return a * 2 + b;
+        }
+        let c1 = f(5,10);
+        document.write(c1);
+        </script>
+        </p>
+        <p>
+      For f = 10, 20...
+      f(x) = 10 * 2 + 20
+      f(x) = 20 + 20
+      f(x) = 40
+      </script>
+      <script>
+        let c2 = f(10,20);
+        document.write(c2);
+        </script>
+        </p>
+        <p>
+      For f = 15, 30...
+      f(x) = 15 * 2 + 30
+      f(x) = 30 + 30
+      f(x) = 60
+      </script>
+      <script>
+        let c3 = f(15,30);
+        document.write(c3);
+        </script>
+        </p>
+        <p>
+      For f = 21, 42...
+      f(x) = 21 * 2 + 42
+      f(x) = 42 + 42
+      f(x) = 84
+      </script>
+      <script>
+        let c4 = f(21,42);
+        document.write(c4);
+        </script>
+        </p>
+        <p>
+      For f = 1001, 2002...
+      f(x) = 1001 * 2 + 2002
+      f(x) = 2002 + 2002
+      f(x) = 4004
+      </script>
+      <script>
+        let c5 = f(1001,2002);
+        document.write(c5);
+        </script>
+        </p>
+        
 </body>
 
 </html>
